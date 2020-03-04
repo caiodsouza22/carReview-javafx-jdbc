@@ -23,7 +23,7 @@
             <Font size="14.0" />
          </font>
       </JFXPasswordField>
-      <JFXRadioButton layoutX="178.0" layoutY="255.0" selected="true" text="Male" textFill="#a0a2ab">
+      <JFXRadioButton fx:id="male" layoutX="178.0" layoutY="255.0" selected="true" text="Male" textFill="#a0a2ab">
          <font>
             <Font size="14.0" />
          </font>
@@ -31,7 +31,7 @@
             <ToggleGroup fx:id="gender" />
          </toggleGroup>
       </JFXRadioButton>
-      <JFXRadioButton layoutX="243.0" layoutY="255.0" text="Female" textFill="#a0a2ab" toggleGroup="$gender">
+      <JFXRadioButton fx:id="female" layoutX="243.0" layoutY="255.0" text="Female" textFill="#a0a2ab" toggleGroup="$gender">
          <font>
             <Font size="14.0" />
          </font>
@@ -56,7 +56,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <JFXRadioButton layoutX="327.0" layoutY="255.0" text="Other" textFill="#a0a2ab" toggleGroup="$gender">
+      <JFXRadioButton fx:id="other" layoutX="327.0" layoutY="255.0" text="Other" textFill="#a0a2ab" toggleGroup="$gender">
          <font>
             <Font size="14.0" />
          </font>

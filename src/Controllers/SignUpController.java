@@ -4,13 +4,13 @@ import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXPasswordField;
-import com.jfoenix.controls.JFXRadioButton;
-import com.jfoenix.controls.JFXTextField;
+import com.jfoenix.controls.*;
 
+import DB.ModuloConexao;
 import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -59,23 +59,42 @@ public class SignUpController implements Initializable {
 	@FXML
 	private JFXPasswordField password;
 
-	private Connection connection;
+	Connection conexao = null;
+	PreparedStatement pst = null;
+	ResultSet rs = null;
 
-	private PreparedStatement pst;
-
+	public SignUpController() {
 	
+		conexao = (Connection) ModuloConexao.conector();
 
+	}
+	
 	@FXML
 	public void signupAction(ActionEvent e) {
+		String sql = "INSERT INTO tbusers(user,password,gender,location)" 
+				+ "VALUES (?,?,?,?)";
 		
-		progress.setVisible(true);
-		PauseTransition pt = new PauseTransition();
-		pt.setDuration(Duration.seconds(3));
-		pt.setOnFinished(ev -> {
+		try {
+			pst = (PreparedStatement) conexao.prepareStatement(sql);
+			pst.setString(1, name.getText());
+			pst.setString(2, password.getText());
+			pst.setString(3, getGender());
+			pst.setString(4, location.getText());
+			
+			pst.executeUpdate();
+			
 
-		});
-		pt.play();
+			PauseTransition pt = new PauseTransition();
+			pt.setDuration(Duration.seconds(3));
+			pt.setOnFinished(ev -> {
 
+			});
+			pt.play();
+			
+		} catch (SQLException e1) {
+			
+			e1.printStackTrace();
+		}
 		
 
 	}
@@ -94,6 +113,24 @@ public class SignUpController implements Initializable {
 		login.show();
 		login.setResizable(false);
 
+	}
+	
+	public String getGender() {
+		String gen = "";
+		
+		if(male.isSelected())
+		{
+			gen = "Male";
+		}
+		else if(female.isSelected()) 
+		{
+			gen = "Female";
+		}
+		else if(other.isSelected())
+		{
+			gen = "Other";
+		}
+			return gen;
 	}
 	
    @Override
