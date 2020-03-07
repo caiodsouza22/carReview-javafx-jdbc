@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #000000;" text="MODEL Y" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="105.0" fitWidth="157.0">
+               <image>
+                  <Image url="@../../../../Downloads/model%20y.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #000000;" text="MODEL S" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="106.0" fitWidth="164.0">
+               <image>
+                  <Image url="@../../../../Downloads/model%20S.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #000000;" text="MODEL X" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="114.0" fitWidth="174.0">
+               <image>
+                  <Image url="@../../../../Downloads/model%20x.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #000000;" text="CYBERTRUCK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="104.0" fitWidth="170.0">
+               <image>
+                  <Image url="@../../../../Downloads/cybertruck.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

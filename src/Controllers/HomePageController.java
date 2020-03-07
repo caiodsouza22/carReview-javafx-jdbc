@@ -57,13 +57,30 @@ public class HomePageController implements Initializable {
 	
 	@FXML
 	private AnchorPane anchor;
+	
+private static HomePageController instance;
+	
+	public HomePageController()
+	{
+		instance = this;
+	}
+	
+	public static HomePageController getInstance()
+	{
+		return instance;
+	}	
+  
+	
+	
+	
+	
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 
 	
 		
-		createPage();
+		createPage(home,"/Controllers/Home.fxml");
 
 	}
 
@@ -86,12 +103,14 @@ public class HomePageController implements Initializable {
 		ft.play();
 
 	}
+	
+	
 
-	private void createPage() {
+	public void createPage(AnchorPane homeN,String loc) {
 
 		try {
-			home = FXMLLoader.load(getClass().getResource("/Controllers/Home.fxml"));
-			setNode(home);
+			homeN = FXMLLoader.load(getClass().getResource(loc));
+			setNode(homeN);
 		} catch (IOException e) {
 
 			e.printStackTrace();
@@ -139,4 +158,11 @@ public class HomePageController implements Initializable {
 		
 		
 	}
+
+
+
+
+
+
+
 }
