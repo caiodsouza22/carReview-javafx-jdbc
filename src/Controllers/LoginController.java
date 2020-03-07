@@ -2,13 +2,18 @@ package Controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXCheckBox;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.PreparedStatement;
 
+import DB.ModuloConexao;
 import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,31 +25,43 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-
 public class LoginController implements Initializable {
- 
+
+	Connection conexao = null;
+	PreparedStatement pst = null;
+	ResultSet rs = null;
+
 	@FXML
-    private JFXButton signup;
+	private JFXButton signup;
 
-    @FXML
-    private JFXTextField username;
-    
-    @FXML
-    private JFXCheckBox remember;
-   
-    @FXML
-    private JFXButton login;
-   
-    @FXML 
-    private JFXButton forgotpassword;
-    
-    @FXML
-    private ImageView progress; 
-    
-    @FXML
-    private JFXPasswordField password;
+	@FXML
+	private JFXTextField username;
 
+	@FXML
+	private JFXCheckBox remember;
 
+	@FXML
+	private JFXButton login;
+
+	@FXML
+	private JFXButton forgotpassword;
+
+	@FXML
+	private ImageView progress;
+
+	@FXML
+	private JFXPasswordField password;
+
+	public LoginController() {
+		conexao = (Connection) ModuloConexao.conector();
+		if (conexao != null) {
+			System.out.println("Conectado");
+
+		} else {
+			System.out.println("Nao conectado");
+		}
+
+	}
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
@@ -52,22 +69,37 @@ public class LoginController implements Initializable {
 		progress.setVisible(false);
 		username.setStyle("-fx-text-inner-color: #a0a2ab;");
 		password.setStyle("-fx-text-inner-color: #a0a2ab;");
-		
-	}
-	
 
-	
+	}
+
 	@FXML
 	public void loginAction(ActionEvent e) {
-		progress.setVisible(true);
-		PauseTransition pt = new PauseTransition();
-		pt.setDuration(Duration.seconds(3));
-		pt.setOnFinished(ev -> {
-			System.out.println("Login successfully");
-		});
-	
-		pt.play();
-	}
+		String sql = "select * from tbusers where user=? and password=?";
+		try {
+			pst = (PreparedStatement) conexao.prepareStatement(sql);
+			pst.setString(1, username.getText());
+			pst.setString(2, password.getText());
+			
+			rs = pst.executeQuery();
+
+			if(rs.next()) {
+				login.getScene().getWindow().hide();
+				Stage login = new Stage();
+				Parent root = FXMLLoader.load(getClass().getResource("/Controllers/HomePage2.fxml"));
+				Scene scene = new Scene(root);
+				login.setScene(scene);
+				login.show();
+				login.setResizable(false);
+
+			
+			 }else {
+				 System.out.println("usuário / ou senha inválidos");
+			 }
+		 }catch (Exception e1) {
+			 
+		 }
+			
+		}
 
 	@FXML
 	public void signUp(ActionEvent e1) throws IOException {
@@ -78,10 +110,7 @@ public class LoginController implements Initializable {
 		signup.setScene(scene);
 		signup.show();
 		signup.setResizable(false);
-		
-	}
-	
-   
-}
-  
 
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="414.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXButton layoutX="29.0" layoutY="35.0" prefHeight="153.0" prefWidth="167.0" style="-fx-background-color: #2D3347;" />
+      <JFXButton layoutX="29.0" layoutY="236.0" prefHeight="153.0" prefWidth="167.0" style="-fx-background-color: #2D3347;" />
+      <JFXButton layoutX="227.0" layoutY="35.0" prefHeight="153.0" prefWidth="167.0" style="-fx-background-color: #2D3347;" />
+      <JFXButton layoutX="227.0" layoutY="236.0" prefHeight="153.0" prefWidth="167.0" style="-fx-background-color: #2D3347;" />
+   </children>
+</AnchorPane>
