@@ -103,11 +103,9 @@ public class SignUpController implements Initializable {
 	public void loginAction(ActionEvent e) throws IOException {
 		signup.getScene().getWindow().hide();
 
-		progress.setVisible(false);
-
 		Stage login = new Stage();
 
-		Parent root = FXMLLoader.load(getClass().getResource("/FXML/LoginMain.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/Controllers/LoginMain.fxml"));
 		Scene scene = new Scene(root);
 		login.setScene(scene);
 		login.show();

@@ -3,7 +3,6 @@ package Controllers;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import com.jfoenix.controls.JFXButton;
@@ -14,7 +13,6 @@ import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
 
 import DB.ModuloConexao;
-import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +21,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javafx.util.Duration;
 
 public class LoginController implements Initializable {
 
@@ -85,7 +82,7 @@ public class LoginController implements Initializable {
 			if(rs.next()) {
 				login.getScene().getWindow().hide();
 				Stage login = new Stage();
-				Parent root = FXMLLoader.load(getClass().getResource("/Controllers/HomePage2.fxml"));
+				Parent root = FXMLLoader.load(getClass().getResource("/Controllers/HomePage1.fxml"));
 				Scene scene = new Scene(root);
 				login.setScene(scene);
 				login.show();
