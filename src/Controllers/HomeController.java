@@ -54,15 +54,18 @@ public class HomeController implements Initializable {
 	@FXML
 	public void ferrariAction(ActionEvent e) {
 		
+		HomePageController.getInstance().createPage(CarsAnchor, "/Controllers/HomeFerrari.fxml");
 	}
 	
 	@FXML
 	public void lamborghiniAction(ActionEvent e) {
 		
+		HomePageController.getInstance().createPage(CarsAnchor, "/Controllers/HomeLambo.fxml");
 	}
 	
 	@FXML
 	public void porscheAction(ActionEvent e) {
-		
+
+		HomePageController.getInstance().createPage(CarsAnchor, "/Controllers/HomePorsche.fxml");
 	}
 }

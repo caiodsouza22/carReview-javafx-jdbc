@@ -15,7 +15,12 @@
 
 <AnchorPane fx:id="anchor" prefHeight="536.0" prefWidth="689.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomePageController">
    <children>
-      <Pane layoutX="-8.0" layoutY="-3.0" prefHeight="546.0" prefWidth="169.0" style="-fx-background-color: #110f0f;">
+      <ImageView fitHeight="546.0" fitWidth="691.0">
+         <image>
+            <Image url="@../../../../Downloads/free-background-4.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="-8.0" layoutY="-3.0" prefHeight="546.0" prefWidth="176.0" style="-fx-background-color: #110f0f;">
          <children>
             <ImageView fitHeight="65.0" fitWidth="60.0" layoutX="58.0">
                <image>
@@ -63,9 +68,9 @@
             </JFXButton>
          </children>
       </Pane>
-      <AnchorPane layoutX="158.0" prefHeight="444.0" prefWidth="477.0">
+      <AnchorPane layoutX="158.0" prefHeight="110.0" prefWidth="533.0">
          <children>
-            <JFXToolbar prefHeight="47.0" prefWidth="533.0" style="-fx-background-color: #110f0f;">
+            <JFXToolbar prefHeight="65.0" prefWidth="533.0" style="-fx-background-color: #110f0f;">
                <center>
                   <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome ." wrappingWidth="70.708984375" BorderPane.alignment="CENTER">
                      <font>

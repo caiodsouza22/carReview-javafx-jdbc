@@ -8,50 +8,50 @@
 
 <AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TeslaController">
    <children>
-      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="MODEL Y" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAFERRARI" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
          <graphic>
-            <ImageView fitHeight="105.0" fitWidth="157.0">
+            <ImageView fitHeight="101.0" fitWidth="166.0">
                <image>
-                  <Image url="@../../../../Downloads/model%20y.png" />
+                  <Image url="@../../../../Downloads/ferrari-laferrari-doors-open.jpg" />
                </image>
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="MODEL S" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="BLACK FERRARI 458" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
          <graphic>
-            <ImageView fitHeight="106.0" fitWidth="164.0">
+            <ImageView fitHeight="104.0" fitWidth="159.0">
                <image>
-                  <Image url="@../../../../Downloads/model%20S.png" />
+                  <Image url="@../../../../Downloads/2880-1800-crop-ferrari-458-spider-c936814022015164503_1.jpg" />
                </image>
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="MODEL X" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="FERRARI 812 GTS" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
          <graphic>
-            <ImageView fitHeight="114.0" fitWidth="174.0">
+            <ImageView fitHeight="110.0" fitWidth="167.0">
                <image>
-                  <Image url="@../../../../Downloads/model%20x.png" />
+                  <Image url="@../../../../Downloads/072b7a6f-ferrari-812-gts_01-e1568049786953.jpg" />
                </image>
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="CYBERTRUCK" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="FERRARI F8 SPIDER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
          <graphic>
-            <ImageView fitHeight="104.0" fitWidth="170.0">
+            <ImageView fitHeight="97.0" fitWidth="165.0">
                <image>
-                  <Image url="@../../../../Downloads/cybertruck.png" />
+                  <Image url="@../../../../Downloads/246bdb40-ferrari-f8-spider-1-1160x653.jpg" />
                </image>
             </ImageView>
          </graphic>
@@ -68,9 +68,9 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <ImageView fitHeight="50.0" fitWidth="118.0" layoutX="191.0" layoutY="-25.0">
+      <ImageView fitHeight="77.0" fitWidth="127.0" layoutX="171.0" layoutY="-19.0">
          <image>
-            <Image url="@../../../../Downloads/kisspng-2017-tesla-model-s-tesla-motors-car-electric-vehic-tesla-5ac2df3ddd8d26.4551072615227205739075.png" />
+            <Image url="@../../../../Downloads/Ferrari-logo-white.png" />
          </image>
       </ImageView>
    </children>

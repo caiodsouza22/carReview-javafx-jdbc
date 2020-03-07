@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TeslaController">
+   <children>
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="56.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAMBORGHINI URUS" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="104.0" fitWidth="167.0">
+               <image>
+                  <Image url="@../../../../Downloads/lamborghini-urus.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="56.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAMBORGHINI VENENO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="115.0" fitWidth="167.0">
+               <image>
+                  <Image url="@../../../../Downloads/S7-modele--lamborghini-veneno.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="249.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAMBORGHINI AVENTADOR" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="101.0" fitWidth="177.0">
+               <image>
+                  <Image url="@../../../../Downloads/aventador.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="249.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAMBORGHINI GALLARDO" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="84.0" fitWidth="177.0">
+               <image>
+                  <Image url="@../../../../Downloads/2010_Lamborghini_Gallardo_(L140)_LP550-2_coupe_(2016-01-05)_01.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="back" contentDisplay="GRAPHIC_ONLY" layoutX="442.0" layoutY="-6.0" onAction="#backAction" prefHeight="50.0" prefWidth="38.0" text="BACK">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="28.0">
+               <image>
+                  <Image url="@../../../../Downloads/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="93.0" layoutX="204.0">
+         <image>
+            <Image url="@../../../../Downloads/kisspng-2018-lamborghini-huracan-car-lamborghini-gallardo-5b38eea57a4900.4424902215304577655009.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

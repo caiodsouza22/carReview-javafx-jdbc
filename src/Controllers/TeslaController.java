@@ -26,8 +26,8 @@ public class TeslaController implements Initializable {
 	@FXML
 	public void backAction(ActionEvent evt) {
 		
-		back.getScene().getWindow().hide();
 		
+		HomePageController.getInstance().createPage(CarInfo, "/Controllers/Home.fxml");
 	}
 
 	
