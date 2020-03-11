@@ -36,6 +36,7 @@ public class HomeController implements Initializable {
 	
 	private AnchorPane CarsAnchor;
 	
+	
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		
@@ -48,7 +49,6 @@ public class HomeController implements Initializable {
 		HomePageController.getInstance().createPage(CarsAnchor, "/Controllers/HomeTesla.fxml");
 	}
 	
-
 
 
 	@FXML

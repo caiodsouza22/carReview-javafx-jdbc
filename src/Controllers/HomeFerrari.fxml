@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TeslaController">
+<AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FerrariController">
    <children>
-      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAFERRARI" textAlignment="CENTER" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #423b3b;" text="LAFERRARI" textAlignment="CENTER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -20,7 +20,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="35.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="BLACK FERRARI 458" textFill="WHITE">
+      <JFXButton fx:id="ferrari458" contentDisplay="TOP" layoutX="270.0" layoutY="35.0" onAction="#ferrari458Action" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #423b3b;" text="BLACK FERRARI 458" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -32,7 +32,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="FERRARI 812 GTS" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #423b3b;" text="FERRARI 812 GTS" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
@@ -44,7 +44,7 @@
             </ImageView>
          </graphic>
       </JFXButton>
-      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="FERRARI F8 SPIDER" textFill="WHITE">
+      <JFXButton contentDisplay="TOP" layoutX="270.0" layoutY="231.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #423b3b;" text="FERRARI F8 SPIDER" textFill="WHITE">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>

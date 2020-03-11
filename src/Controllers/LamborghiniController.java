@@ -1,0 +1,34 @@
+package Controllers;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import com.jfoenix.controls.*;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
+
+public class LamborghiniController implements Initializable {
+
+	@FXML
+	private JFXButton back;
+	
+	AnchorPane CarInfo;
+	
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+	
+		
+	}
+	
+	@FXML
+	public void backAction(ActionEvent evt) {
+		
+		
+		HomePageController.getInstance().createPage(CarInfo, "/Controllers/Home.fxml");
+	}
+
+	
+}

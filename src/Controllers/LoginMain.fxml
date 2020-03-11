@@ -66,10 +66,5 @@
             <Image url="@../../../../Downloads/transportation.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="progress" fitHeight="11.0" fitWidth="198.0" layoutX="226.0" layoutY="356.0">
-         <image>
-            <Image url="@../../../Cars/src/image/Progress_bar.gif" />
-         </image>
-      </ImageView>
    </children>
 </AnchorPane>

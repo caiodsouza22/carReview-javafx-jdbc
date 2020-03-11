@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TeslaController">
+<AnchorPane prefHeight="429.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LamborghiniController">
    <children>
       <JFXButton contentDisplay="TOP" layoutX="37.0" layoutY="56.0" prefHeight="159.0" prefWidth="191.0" style="-fx-background-color: #110f0f; -fx-border-color: #ffffff;" text="LAMBORGHINI URUS" textAlignment="CENTER" textFill="WHITE">
          <font>
